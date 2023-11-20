@@ -11,15 +11,16 @@ class GitHubViewModel: ObservableObject {
     @Published var user: GitHubUser?
     @Published var repos: [GitHubRepo] = []
     
-    var userName: String = ""
+    @Published var name: String = ""
     
-    init() {
-        let defualt = UserDefaults.standard
-        self.userName = defualt.string(forKey: "gitHubUserName") ?? "dattali18"
+//    var userName: String?
+    
+    init(_ name: String) {
+        self.name = name
     }
     
     func getUser() async throws -> GitHubUser? {
-        let endPoint = "https://api.github.com/users/" + userName
+        let endPoint = "https://api.github.com/users/" + (self.name)
         guard let url = URL(string: endPoint) else {
             // throw an error
             print("Error in URL")
@@ -45,7 +46,7 @@ class GitHubViewModel: ObservableObject {
     }
     
     func getRepos() async throws -> [GitHubRepo] {
-        let endPoint = "https://api.github.com/users/\(self.userName)/repos"
+        let endPoint = "https://api.github.com/users/\(self.name)/repos"
         guard let url = URL(string: endPoint) else {
             // throw an error
             print("Error in URL")

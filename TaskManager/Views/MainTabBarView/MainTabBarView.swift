@@ -25,7 +25,8 @@ struct MainTabBarView: View {
                     Label("Projects", systemImage: "tray.full.fill")
                 }
             
-            GitHubView()
+//            GitHubView()
+            GitHubUserView()
                 .tabItem {
                     Label("GitHub", systemImage: "folder.fill")
                 }

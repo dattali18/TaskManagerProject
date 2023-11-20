@@ -13,11 +13,13 @@ struct GitHubRepoView: View {
     var repo: GitHubRepo?
 
     var body: some View {
-        Form {
-            Section("Langauges") {
-                ForEach(self.languages, id: \.0) { key, count in
-                    Text(key)
-                        .badge(count)
+        VStack {
+            Form {
+                Section("Langauges") {
+                    ForEach(self.languages, id: \.0) { key, count in
+                        Text(key)
+                            .badge(count)
+                    }
                 }
             }
         }

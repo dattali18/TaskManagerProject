@@ -58,6 +58,8 @@
 		C60699C12B18E918000024A3 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C02B18E918000024A3 /* GitHubViewModel.swift */; };
 		C60699C62B18EC6D000024A3 /* GitHubRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C52B18EC6D000024A3 /* GitHubRepoView.swift */; };
 		C60699C82B18EC7A000024A3 /* GitHubRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C72B18EC7A000024A3 /* GitHubRepoViewModel.swift */; };
+		C67500E42B0B845000D10D01 /* GitHubUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67500E32B0B845000D10D01 /* GitHubUserView.swift */; };
+		C67500E62B0B845D00D10D01 /* GitHubUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67500E52B0B845D00D10D01 /* GitHubUserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +115,8 @@
 		C60699C52B18EC6D000024A3 /* GitHubRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoView.swift; sourceTree = "<group>"; };
 		C60699C72B18EC7A000024A3 /* GitHubRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoViewModel.swift; sourceTree = "<group>"; };
 		C60C3AA72B1898B600451E39 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67500E32B0B845000D10D01 /* GitHubUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserView.swift; sourceTree = "<group>"; };
+		C67500E52B0B845D00D10D01 /* GitHubUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +444,7 @@
 		C60699BD2B18E8F1000024A3 /* GitHubView */ = {
 			isa = PBXGroup;
 			children = (
+				C67500E22B0B843000D10D01 /* GitHubUserView */,
 				C60699C42B18EC5A000024A3 /* GitHubRepoView */,
 				C60699C22B18EC36000024A3 /* GitHubView */,
 			);
@@ -478,6 +483,15 @@
 				C60C3AA72B1898B600451E39 /* TaskManager.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C67500E22B0B843000D10D01 /* GitHubUserView */ = {
+			isa = PBXGroup;
+			children = (
+				C67500E32B0B845000D10D01 /* GitHubUserView.swift */,
+				C67500E52B0B845D00D10D01 /* GitHubUserViewModel.swift */,
+			);
+			path = GitHubUserView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,6 +590,7 @@
 				C606999C2B18C8BE000024A3 /* AddEditResourceViewModel.swift in Sources */,
 				C60699AE2B18C8BF000024A3 /* SwipeButtonView.swift in Sources */,
 				C60699B42B18C8BF000024A3 /* ProjectView.swift in Sources */,
+				C67500E42B0B845000D10D01 /* GitHubUserView.swift in Sources */,
 				C606999A2B18C8BE000024A3 /* Event.swift in Sources */,
 				C60699A22B18C8BE000024A3 /* AddEditAssignmentViewModel.swift in Sources */,
 				C60699AA2B18C8BF000024A3 /* CourseInfoViewModel.swift in Sources */,
@@ -597,6 +612,7 @@
 				C60699B12B18C8BF000024A3 /* AddEditProjectView.swift in Sources */,
 				C60699B82B18C8BF000024A3 /* MainTabBarView.swift in Sources */,
 				C60699BA2B18C8BF000024A3 /* AddEditSemesterView.swift in Sources */,
+				C67500E62B0B845D00D10D01 /* GitHubUserViewModel.swift in Sources */,
 				C60699A62B18C8BF000024A3 /* AssignmentInfoViewModel.swift in Sources */,
 				C60699972B18C8BE000024A3 /* UITouch+extention.swift in Sources */,
 			);
