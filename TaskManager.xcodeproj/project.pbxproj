@@ -54,6 +54,10 @@
 		C60699BA2B18C8BF000024A3 /* AddEditSemesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606998A2B18C8BE000024A3 /* AddEditSemesterView.swift */; };
 		C60699BB2B18C8BF000024A3 /* SemesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606998C2B18C8BE000024A3 /* SemesterView.swift */; };
 		C60699BC2B18C8BF000024A3 /* SemesterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606998D2B18C8BE000024A3 /* SemesterViewModel.swift */; };
+		C60699BF2B18E907000024A3 /* GitHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699BE2B18E907000024A3 /* GitHubView.swift */; };
+		C60699C12B18E918000024A3 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C02B18E918000024A3 /* GitHubViewModel.swift */; };
+		C60699C62B18EC6D000024A3 /* GitHubRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C52B18EC6D000024A3 /* GitHubRepoView.swift */; };
+		C60699C82B18EC7A000024A3 /* GitHubRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60699C72B18EC7A000024A3 /* GitHubRepoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +108,10 @@
 		C606998A2B18C8BE000024A3 /* AddEditSemesterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditSemesterView.swift; sourceTree = "<group>"; };
 		C606998C2B18C8BE000024A3 /* SemesterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemesterView.swift; sourceTree = "<group>"; };
 		C606998D2B18C8BE000024A3 /* SemesterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemesterViewModel.swift; sourceTree = "<group>"; };
+		C60699BE2B18E907000024A3 /* GitHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubView.swift; sourceTree = "<group>"; };
+		C60699C02B18E918000024A3 /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
+		C60699C52B18EC6D000024A3 /* GitHubRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoView.swift; sourceTree = "<group>"; };
+		C60699C72B18EC7A000024A3 /* GitHubRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoViewModel.swift; sourceTree = "<group>"; };
 		C60C3AA72B1898B600451E39 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -215,15 +223,16 @@
 		C60699562B18C8BE000024A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C60699842B18C8BE000024A3 /* TaksApp.swift */,
+				C60699852B18C8BE000024A3 /* MainTabBarView */,
 				C60699572B18C8BE000024A3 /* ResourceView */,
 				C606995E2B18C8BE000024A3 /* SingUpView */,
 				C60699602B18C8BE000024A3 /* SignInView */,
 				C60699622B18C8BE000024A3 /* AssignmentView */,
 				C606996C2B18C8BE000024A3 /* CourseView */,
 				C606997A2B18C8BE000024A3 /* ProjectsView */,
-				C60699842B18C8BE000024A3 /* TaksApp.swift */,
-				C60699852B18C8BE000024A3 /* MainTabBarView */,
 				C60699872B18C8BE000024A3 /* SemesterView */,
+				C60699BD2B18E8F1000024A3 /* GitHubView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,6 +437,33 @@
 			path = SemesterView;
 			sourceTree = "<group>";
 		};
+		C60699BD2B18E8F1000024A3 /* GitHubView */ = {
+			isa = PBXGroup;
+			children = (
+				C60699C42B18EC5A000024A3 /* GitHubRepoView */,
+				C60699C22B18EC36000024A3 /* GitHubView */,
+			);
+			path = GitHubView;
+			sourceTree = "<group>";
+		};
+		C60699C22B18EC36000024A3 /* GitHubView */ = {
+			isa = PBXGroup;
+			children = (
+				C60699BE2B18E907000024A3 /* GitHubView.swift */,
+				C60699C02B18E918000024A3 /* GitHubViewModel.swift */,
+			);
+			path = GitHubView;
+			sourceTree = "<group>";
+		};
+		C60699C42B18EC5A000024A3 /* GitHubRepoView */ = {
+			isa = PBXGroup;
+			children = (
+				C60699C52B18EC6D000024A3 /* GitHubRepoView.swift */,
+				C60699C72B18EC7A000024A3 /* GitHubRepoViewModel.swift */,
+			);
+			path = GitHubRepoView;
+			sourceTree = "<group>";
+		};
 		C60C3A9E2B1898B600451E39 = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +569,7 @@
 				C60699902B18C8BE000024A3 /* MockDataManager.swift in Sources */,
 				C60699A42B18C8BE000024A3 /* AssignmentsViewModel.swift in Sources */,
 				C606999D2B18C8BE000024A3 /* AddEditResourceView.swift in Sources */,
+				C60699C62B18EC6D000024A3 /* GitHubRepoView.swift in Sources */,
 				C60699982B18C8BE000024A3 /* CustomDelegate.swift in Sources */,
 				C606999E2B18C8BE000024A3 /* ResourcesView.swift in Sources */,
 				C60699AD2B18C8BF000024A3 /* CourseHeaderView.swift in Sources */,
@@ -543,16 +580,19 @@
 				C60699A22B18C8BE000024A3 /* AddEditAssignmentViewModel.swift in Sources */,
 				C60699AA2B18C8BF000024A3 /* CourseInfoViewModel.swift in Sources */,
 				C60699992B18C8BE000024A3 /* UserLogin.swift in Sources */,
+				C60699C82B18EC7A000024A3 /* GitHubRepoViewModel.swift in Sources */,
 				C60699B92B18C8BF000024A3 /* AddEditSemesterViewModel.swift in Sources */,
 				C60699922B18C8BE000024A3 /* Model.xcdatamodeld in Sources */,
 				C60699A12B18C8BE000024A3 /* SignInView.swift in Sources */,
 				C60699AB2B18C8BF000024A3 /* CourseInfoView.swift in Sources */,
 				C60699B72B18C8BF000024A3 /* TaksApp.swift in Sources */,
+				C60699C12B18E918000024A3 /* GitHubViewModel.swift in Sources */,
 				C60699942B18C8BE000024A3 /* SemesterEnum.swift in Sources */,
 				C60699BB2B18C8BF000024A3 /* SemesterView.swift in Sources */,
 				C606999F2B18C8BE000024A3 /* ResourcesViewModel.swift in Sources */,
 				C60699A32B18C8BE000024A3 /* AddEditAssignmentView.swift in Sources */,
 				C60699912B18C8BE000024A3 /* Model.swift in Sources */,
+				C60699BF2B18E907000024A3 /* GitHubView.swift in Sources */,
 				C60699952B18C8BE000024A3 /* ModeEnum.swift in Sources */,
 				C60699B12B18C8BF000024A3 /* AddEditProjectView.swift in Sources */,
 				C60699B82B18C8BF000024A3 /* MainTabBarView.swift in Sources */,

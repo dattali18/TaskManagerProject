@@ -14,20 +14,25 @@ struct MainTabBarView: View {
                 .tabItem {
                     Label("Courses", systemImage: "book.closed.fill")
                 }
-            
+
             AssignmentsView()
                 .tabItem {
                     Label("Assignments", systemImage: "list.bullet.clipboard.fill")
                 }
-            
+
             ProjectView()
                 .tabItem {
                     Label("Projects", systemImage: "tray.full.fill")
+                }
+            
+            GitHubView()
+                .tabItem {
+                    Label("GitHub", systemImage: "folder.fill")
                 }
         }
     }
 }
 
-//#Preview {
+// #Preview {
 //    MainTabBarView()
-//}
+// }
